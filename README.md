@@ -32,11 +32,11 @@ Docker && docker-compose
    poetry run manage.py migrate
    poetry run python manage.py runserver
    ```
-
+   
 4. Run docker dev server environment:
 
    ```shell
-   docker-compose up -d --build
+   docker-compose up -d --build 
    docker-compose exec web python manage.py migrate
    ```
 
@@ -45,5 +45,6 @@ Docker && docker-compose
    ```shell
    docker-compose exec web python manage.py test
    ```
+
 
 
