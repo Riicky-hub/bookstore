@@ -13,8 +13,9 @@ jobs:
           python-version: 3.8
       - name: Install poetry
         run: |
-          pip install -U pip
-          pip install -U poetry
+          pip install pip
+          pip install poetry==1.1.4
+          pip install poetry-core==1.0.8
           poetry install
         env:
           POETRY_VIRTUALENVS_CREATE: false
